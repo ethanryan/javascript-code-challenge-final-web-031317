@@ -18,15 +18,22 @@
         <div class="col s4">
           <form id="photo-form">
             <label for="image_url">Image Url</label>
-            <input type='text' name='image_url' />
+            <input type='text' name='image_url' id="image_url"/>
+            <!-- added id for image_url -->
+
             <label for="caption">Caption</label>
-            <input type='text' name='caption' />
+            <input type='text' name='caption' id="caption"/>
+            <!-- added id for image_url -->
+
             <input type='submit' />
           </form>
         </div>
 
         <div class='col s8'>
-          <div id='photo-list'></div>
+          <div id='photo-list'>photos go here
+            <div id="image_output"></div>
+          </div>
+
         </div>
       </div>
 
