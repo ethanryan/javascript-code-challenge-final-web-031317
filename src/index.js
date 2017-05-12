@@ -27,6 +27,8 @@ class Caption {
 
 var gif = 'https://giphy.com/gifs/zWJCJtP40CTra'
 
+var newGif = 'https://media.giphy.com/media/zWJCJtP40CTra/giphy.gif'
+
 var imageUrl = `$#${image_url}`
 var caption = `$#${caption}`
 
@@ -46,14 +48,14 @@ function formSubmit() {
     //$("#photo-list").append('<br>' + gif);
 
     //$('#theDiv').prepend('<img id="theImg" src="theImg.png" />')
-    $('#image_output').html(`<img id="${imageUrl}" src="${imageUrl}" />`)
+    $('#image_output').append(`<img id="${imageUrl}" src="${imageUrl}" />`)
 
     //$("#image_output").attr('src', imageUrl);
     // almost??
 
     //$("#photo-list").append('<br>' + imageUrl);
     // above renders url input as text
-    $("#photo-list").append('<br>' + caption + '<br>');
+    $("#image_output").append('<br>' + caption + '<br>');
     console.log('form submitted!');
     this.reset(); //clears form
   })
